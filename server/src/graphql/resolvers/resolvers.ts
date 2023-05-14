@@ -58,8 +58,6 @@ export default {
       trailer: trailer,
       rating: rating,
     });
-    console.log("hajshasa", response);
-
     if (!response) {
       context.res.status(400).send({
         message: "Failed To Update Movie...",
