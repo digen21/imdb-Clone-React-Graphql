@@ -10,22 +10,23 @@
 		}
 
 		.movie_card {
-
+			display: flex;
+			justify-content: space-between;
 			user-select: none;
 			padding: 0 !important;
-			width: 25rem;
-			height: 42rem;
+			width: 22rem;
+			height: 38rem;
 			margin: 14px;
 			border-radius: 10px;
 			box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
-			/* overflow: hidden; */
+			overflow: hidden;
 			cursor: pointer;
 		}
 
 		.movie_card img {
 			border-top-left-radius: 10px;
 			border-top-right-radius: 10px;
-			height: 33rem;
+			height: 28rem;
 		}
 
 		.movie_info {
@@ -34,6 +35,7 @@
 
 		.movie_info i {
 			font-size: 20px;
+
 		}
 
 		.card-title {

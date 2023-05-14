@@ -26,7 +26,9 @@ const SingleMovie = ({ movie }: IMovie | any) => {
           {movie.name}
         </h5>
         <span className="movie_info">{movie.year}</span>
-        <span className="movie_info mx-3">{movie.genre}</span>
+        <span className="movie_info mx-3" style={{ fontSize: ".80rem" }}>
+          {movie.genre}
+        </span>
         <span className="movie_info float-right text-dark">
           <i className="fas fa-star text-warning"></i> {movie.rating} / 10
         </span>

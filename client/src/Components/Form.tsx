@@ -54,75 +54,85 @@ const AddMovie = () => {
             id="image"
             name={"image"}
             placeholder="Enter Movie Image Link"
-            required
           />
         </div>
-
+        {errors.image && (
+          <p className="text-danger text-center">Image Link Must Required...</p>
+        )}
         <div className="form-group">
           <input
             type="text"
             {...register("name", { required: true })}
-            className="form-control p-4 w-50 shadow-none px-2 text-md-left font-weight-normal"
+            className="form-control p-4 w-50 shadow-none px-2 text-md-left font-weight-normal mt-3"
             id="name"
             name={"name"}
             placeholder="Enter Movie Name"
           />
         </div>
         {errors.name && (
-          <p className="text-danger mt-1">Movie Name Must Required...</p>
+          <p className="text-danger text-center">Movie Name Must Required...</p>
         )}
         <div className="form-group">
           <input
             type="text"
             {...register("year", { required: true })}
-            className="form-control p-4 w-50 shadow-none px-2 text-md-left font-weight-normal"
+            className="form-control p-4 w-50 shadow-none px-2 text-md-left font-weight-normal mt-3"
             id="year"
             name={"year"}
             placeholder="Enter Movie Year"
           />
         </div>
         {errors.year && (
-          <p className="text-danger mt-1">Movie Year Must Required...</p>
+          <p className="text-danger text-center">Movie Year Must Required...</p>
         )}
         <div className="form-group">
           <input
             type="text"
             {...register("genre", { required: true })}
-            className="form-control p-4 w-50 shadow-none px-2 text-md-left font-weight-normal"
+            className="form-control p-4 w-50 shadow-none px-2 text-md-left font-weight-normal mt-3"
             id="Genre"
             name={"genre"}
             placeholder="Enter Movie Genre"
           />
-          {errors.genre && (
-            <p className="text-danger mt-1">Movie Genre Must Required...</p>
-          )}
         </div>
+        {errors.genre && (
+          <p className="text-danger text-center">
+            Movie Genre Must Required...
+          </p>
+        )}
         <div className="form-group">
           <input
             type="text"
             {...register("rating", { required: true })}
-            className="form-control p-4 w-50 shadow-none px-2 text-md-left font-weight-normal"
+            className="form-control p-4 w-50 shadow-none px-2 text-md-left font-weight-normal mt-3"
             id="rating"
             name={"rating"}
             placeholder="Enter Movie rating"
           />
-          {errors.rating && (
-            <p className="text-danger mt-1">Movie Rating Must Required...</p>
-          )}
         </div>
+        {errors.rating && (
+          <p className="text-danger text-center">
+            Movie Rating Must Required...
+          </p>
+        )}
         <div className="form-group">
           <input
             type="text"
             {...register("trailer", { required: true })}
-            className="form-control p-4 w-50 shadow-none px-2 text-md-left font-weight-normal"
+            className="form-control p-4 w-50 shadow-none px-2 text-md-left font-weight-norma mt-3"
             id="trailer"
             name="trailer"
             placeholder="Enter Movie Trailer Link"
           />
         </div>
+        {errors.trailer && (
+          <p className="text-danger text-center">
+            Trailer Link Must Required / Must Be The Youtube Link...
+          </p>
+        )}
         <div className="form-group">
           <button
-            className="btn btn-primary shadow-none w-50 text-md-center font-weight-normal"
+            className="btn btn-primary shadow-none w-50 text-md-center font-weight-normal mt-3"
             type="submit"
           >
             Add New Movie
